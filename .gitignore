@@ -1,0 +1,8 @@
+# Generator + working files stay out of the entry repo.
+gen_v1.py
+news-25-sources.md
+v1-512.png
+v1-300.png
+*.log
+__pycache__/
+out/
