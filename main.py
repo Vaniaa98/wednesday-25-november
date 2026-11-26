@@ -3,30 +3,31 @@
 # newspaper front page drawn programmatically. This program copies it
 # byte-for-byte to /output/entry.png. No network, no dependencies.
 #
-# v2.2.1: direction A + illustrated cards (winner pattern of the 23 Nov edition:
-# regian #1 / pandya #2) + a world map + a masthead flag strip. One dominant lead
-# block (Houthis hit Ras Tanura refinery, Red Sea escalation, Wednesday 25 November
-# 2026, as of 17:35 UTC) with a vector Red Sea scene (tanker + drone + explosion +
-# refinery + Jeddah skyline + PIF Tower), 8 numbered illustrated story cards (vector
-# scene + big stat + status badge + region colour) across 6 regions, a "WHERE IT
-# HAPPENED" world map with numbered pins 1-8 in the cards' region colours plus a red
-# star for the lead (Ras Tanura) and a red dot for Riyadh, a labelled key-figures
-# bar, 12 more dated briefs in an "ALSO ON" list (21 stories in total), and a
-# two-way DATE CHECK naming the other days' news left out on purpose (COP31 ended
-# Sun 22 Nov; Indonesia factory-fire toll confirmed Tue 24 Nov; Hamas chief Abu
-# Nahel killed Tue 24 Nov; Miley Cyrus married Sat 21 Nov). Every figure carries
-# its unit and context; the Iran Hormuz tanker claim is labelled CLAIM, not
-# verified (2 tankers, not 6). Smallest type on the page is 18px so it stays
-# readable at 300px. The masthead carries a strip of 8 country flags (Saudi
-# Arabia, Yemen, Israel, Iran, Russia, Ukraine, USA, South Korea) to the right
-# of the title. No UTC timeline: the sources carry no per-story UTC times, and
-# inventing them would be fabrication.
+# v2.5: direction A + illustrated cards (winner pattern of the 23 Nov edition:
+# regian #1 / pandya #2) + a world map. One dominant lead block (Houthis hit
+# Ras Tanura refinery, Red Sea escalation, Wednesday 25 November 2026, as of
+# 17:35 UTC) with a vector Red Sea scene (tanker + drone + explosion +
+# refinery + Jeddah skyline + PIF Tower), 8 numbered illustrated story cards
+# (vector scene + big stat + status badge + region colour) across 6 regions, a
+# "WHERE IT HAPPENED" world map with numbered pins 1-8 in the cards' region
+# colours plus a red star for the lead (Ras Tanura) and a red dot for Riyadh, a
+# labelled key-figures bar, 12 more dated briefs in an "ALSO ON" list (21
+# stories in total), and a two-way DATE CHECK naming the other days' news left
+# out on purpose (COP31 ended Sun 22 Nov; Indonesia factory-fire toll confirmed
+# Tue 24 Nov; Hamas chief Abu Nahel killed Tue 24 Nov; Miley Cyrus married Sat
+# 21 Nov). Every figure carries its unit and context; the Iran Hormuz tanker
+# claim is labelled CLAIM, not verified (2 tankers, not 6). The per-card source
+# lines were removed (unreadable at 300px) and the masthead flag strip was
+# removed, so the page is cleaner at 300px; sourcing is carried by the
+# CONFIRMED/REPORTED/CLAIM badges and the footer source list. No UTC timeline:
+# the sources carry no per-story UTC times, and inventing them would be
+# fabrication.
 #
 # Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 #   mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 #
-# v2.2.1 entry.png sha256:
-# 258f9de670ff4766c195e93a96c8df4c0a8893a5ca7dcc170259d6115d0aabfb
+# v2.5 entry.png sha256:
+# 5e5769ade6e80ce45244fdfec7bcea452e92a45ecf3a2fff1845d7ee56a08b8d
 
 import hashlib
 import os
